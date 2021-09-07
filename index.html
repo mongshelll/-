@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113632663-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113632663-1');
+    </script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JunSeong</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+	<nav>
+		<div class="menu_box">
+			<h1 class="logo"><a href="#section01">JunSeong</a></h1>
+			<ul>
+				<li><a href="#section01">Home</a></li>
+				<li><a href="#section02">Profile</a></li>
+				<li><a href="#section03">Web</a></li>
+				<li><a href="#section04">Graphic</a></li>
+<!--				<li><a href="#section05">Contact</a></li>-->
+			</ul>
+		</div>
+	</nav>
+	<section id="section01">
+		<div class="section_wrab">
+			<ul class="menu">
+				<li class="profile">
+					<a href="#section02">
+						<img src="images/porflie.png" alt="porflie">
+						<img src="images/porflie.png" class="hover_ef_01" alt="porflie">
+					</a>
+				</li>
+				<li class="web">
+					<a href="#section03">
+						<img src="images/web.png" alt="web">
+						<img src="images/web.png" class="hover_ef_02" alt="web">
+					</a>
+				</li>				
+				<li class="graphic">
+					<a href="#section04">
+						<img src="images/graphic.png" alt="graphic">
+						<img src="images/graphic.png" class="hover_ef_03" alt="graphic">
+					</a>
+				</li>
+<!--
+				<li class="contact">
+					<a href="#section05">
+						<img src="images/contact.png" alt="">
+						<img src="images/contact.png" class="hover_ef_04" alt="">
+					</a>
+				</li>
+-->
+				<span>
+					<strong>Hello</strong>
+				</span>
+			</ul>
+<!--			<div id="BG_cover" style="width:100%;height:1000px;background:rgba(0,0,0,0.3);position:absolute;;z-index:1;"></div>-->
+			<div class="video">
+				<video class="view player" autoplay loop>
+					<source src="BG.mp4" type="video/mp4" />
+				</video>
+			</div>			
+		</div>
+	</section>
+	<section id="section02">
+		<!-- 프로필 -->
+		<div class="section_wrap">
+			<div class="section_title">
+				<hr>
+				<h2>Profile</h2>
+				<hr>
+			</div>
+			<article class="profile_wrap">
+				<div class="profile_img">
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/ps.png" alt="Photoshop">
+						</div>
+						<div class="back">
+							Photoshop
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/ai.png" alt="Illustrator">
+						</div>
+						<div class="back">
+							Illustrator
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/id.png" alt="InDesign">
+						</div>
+						<div class="back">
+							InDesign
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/pr.png" alt="Premiere">
+						</div>
+						<div class="back">
+							Premiere
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/ae.png" alt="After Effects">
+						</div>
+						<div class="back">
+							After Effects
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/dw.png" alt="Dreamweave">
+						</div>
+						<div class="back">
+							Dreamweave
+						</div>
+					</div>
+					<div class="card">
+						<div class="front">
+							<img src="images/icon/fl.png" alt="Flash">
+						</div>
+						<div class="back">
+							Flash
+						</div>
+					</div>
+					<div class="card" style="width:90px;height:126px;">
+						<div class="front">
+							<img src="images/icon/css3.png" alt="CSS3">
+						</div>
+						<div class="back" id="back_01">
+							CSS3
+						</div>
+					</div>
+					<div class="card" style="width:90px;height:126px;">
+						<div class="front">
+							<img src="images/icon/html5.png" alt="HTML5">
+						</div>
+						<div class="back" id="back_02">
+							HTML5
+						</div>
+					</div>
+					<div class="card" style="width:90px;height:126px;">
+						<div class="front">
+							<img src="images/icon/js.png" alt="JavaScript">
+						</div>
+						<div class="back" id="back_03">
+							JavaScript
+						</div>
+					</div>
+					<div class="card" style="width:90px;height:126px;">
+						<div class="front">
+							<img src="images/icon/JQ.png" alt="jQuery">
+						</div>
+						<div class="back" id="back_04">
+							jQuery
+						</div>
+					</div>
+					<script>
+						$(".card").flip({
+							axis: 'y',
+							trigger: 'hover'
+						});
+					</script>
+				</div>
+				<div class="profile_text_box">
+					
+<!--
+					<div class="proflie_text_title">					 
+						<p>
+							이름 &nbsp;:<br>
+							생년월일&nbsp;:<br>
+							연락처 &nbsp;:<br>
+							e-mail &nbsp;:<br>
+						</p>
+					</div>
+-->
+					<div class="profile_text">
+					<h3>ABOUT ME</h3><br>
+					<ul>					
+						<li>이름 : 이준성</li>
+						<li>생년월일 : 90. 09. 27</li>
+						<li>연락처 : 010 6284 9927</li>
+						<li>주소 : 서울시 강서구 마곡동</li>
+						<li>e-mail : ljs1898@gmail.com</li>
+					</ul><br>
+						<h3>LICENSE</h3><br>
+						<li>웹디자인 기능사</li>
+						<li>컴퓨터그래픽스운용기능사</li>
+						<li>GTQ 1급</li>
+						<li>자동차운전면허 1종보통</li>
+					</div>
+				</div>
+				<script>
+					$(function(){
+						$(".profile_wrap").hover(
+							function () {
+								$(".profile_text_box").stop().animate({
+									left: "750px"			//    마우스 오버시 0.7초동안 위치 값이 변경
+								}, 700, 'swing')
+							}),
+						$(".profile_wrap").hover(
+							function () {
+								$(".card").stop().animate({
+									left: "0"			//    마우스 오버시 0.3초동안 위치 값이 변경
+								}, 300, 'swing');
+							})
+					});
+				</script>
+			</article>
+		</div>
+	</section>
+	<section id="section03">
+		<!-- web -->
+		<div class="section_wrap">
+			<div class="section_title">
+				<hr>
+				<h2>WEB</h2>
+				<hr>
+			</div>
+			<article id="web">
+			    <div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/selecto_coffee/index.png" data-lightbox="example-3-6" data-title="web6">
+							<div>
+								<img src="images/web_img/selecto_coffee/index_min.jpg" alt="web1">
+								<div class="cover"><span>VIEW MORE <br>image</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>셀렉토커피 카피 (작업중)<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/selecto_coffee/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/paris/index.jpg" data-lightbox="example-3-1" data-title="web1">
+							<div>
+								<img src="images/web_img/paris/index_min.jpg" alt="web1">
+								<div class="cover"><span>VIEW MORE <br>image</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>파리바게뜨 리뉴얼<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/paris/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/kimchi/kimchi_index.jpg" data-lightbox="example-3-2" data-title="web2">
+							<div>
+								<img src="images/web_img/kimchi/kimchi_index_min.jpg" alt="web2">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>김치 쇼핑몰 리뉴얼<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/kimchi/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/pension/index.jpg" data-lightbox="example-3-3" data-title="web3">
+							<div>
+								<img src="images/web_img/pension/index_min.jpg" alt="web3">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>펜션<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/pension/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+<!--
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/juicy/index.jpg" data-lightbox="example-3-4" data-title="web4">
+							<div>
+								<img src="images/web_img/juicy/index_min.jpg" alt="web4">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>쥬시(수정중)<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/juicy/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/web_img/westgin/index.jpg" data-lightbox="example-3-5" data-title="web5">
+							<div>
+								<img src="images/web_img/westgin/index_min.jpg" alt="web5">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>
+						</a>
+					</div>
+					<span>
+						<strong>웨스트진(수정중)<br>
+							<div class="link_bg">
+								<a href="http://ljs1898.cafe24.com/web/westgin/index.html" target="_blank">
+									link
+								</a>
+							</div>
+						</strong>
+					</span>
+				</div>
+-->
+				<div class="brakets_icon">
+					<!--					<img src="images/icon/brackets_icons.png" alt="brakests_icon">-->
+				</div>
+			</article>
+		</div>
+	</section>
+	<section id="section03-1"></section>
+	<section id="section04">
+		<!-- 웹툰 -->
+		<div class="section_wrap">
+			<div class="section_title">
+				<hr>
+				<h2>GRAPHIC</h2>
+				<hr>
+			</div>
+			<article id="graphic">
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/webtoon/01.png" data-lightbox="example-set" data-title="심심한 마왕">
+							<div>
+								<img src="images/webtoon/01.png" alt="심심한 마왕">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>							
+						</a>
+					</div>
+					<span><b>웹툰 드로잉</b></span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<a class="example-image-link" href="images/donghwa/01.jpg" data-lightbox="example-1" data-title="혹부리 영감">
+							<div>
+								<img src="images/donghwa/donghwa_min.jpg" alt="혹부리영감">
+								<div class="cover"><span>VIEW MORE</span></div>
+							</div>
+						</a>
+					</div>
+					<span><b>동화책</b></span>
+				</div>
+			</article>
+			<div class="hedden">
+				<a class="example-image-link" href="images/webtoon/02.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/03.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/04.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/05.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/06.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/07.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/08.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/09.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/10.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/11.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/12.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/13.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/14.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/15.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/16.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/17.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/18.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/19.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/20.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/21.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/22.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/23.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/24.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/25.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/26.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/27.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/28.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/29.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/30.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/31.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/32.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/33.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/34.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/35.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/36.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/37.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/38.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/39.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/40.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/41.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/42.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/43.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/44.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/45.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/46.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<a class="example-image-link" href="images/webtoon/47.png" data-lightbox="example-set" data-title="심심한 마왕"></a>
+				<!-- 심심한 마왕 end -->
+				<a class="example-image-link" href="images/donghwa/02.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/03.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/04.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/05.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/06.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/06-1.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/07.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/08.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<a class="example-image-link" href="images/donghwa/09.jpg" data-lightbox="example-1" data-title="혹부리 영감"></a>
+				<!-- 혹부리영감 end -->
+				<a class="example-image-link" href="images/web_img/paris/index-1.jpg" data-lightbox="example-3-1" data-title="파리바게뜨"></a>
+				<a class="example-image-link" href="images/web_img/paris/index-2.jpg" data-lightbox="example-3-1" data-title="파리바게뜨"></a>
+				<a class="example-image-link" href="images/web_img/paris/sub_01.jpg" data-lightbox="example-3-1" data-title="파리바게뜨"></a>
+				<a class="example-image-link" href="images/web_img/paris/sub_01-1.jpg" data-lightbox="example-3-1" data-title="파리바게뜨"></a>
+				<a class="example-image-link" href="images/web_img/paris/sub_02.jpg" data-lightbox="example-3-1" data-title="파리바게뜨"></a>
+				<!-- 파리바게뜨 end -->
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_index-1.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_01.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_01-1.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_01-2.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_01-3.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_02.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_02-1.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_02-2.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<a class="example-image-link" href="images/web_img/kimchi/kimchi_sub_02-3.jpg" data-lightbox="example-3-2" data-title="김치쇼핑몰"></a>
+				<!-- 김치 쇼핑몰 end -->
+				<a class="example-image-link" href="images/web_img/pension/main_01.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/main_02.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/main_03.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/sub_02.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/sub_02-3.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/sub_06.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<a class="example-image-link" href="images/web_img/pension/sub_07.jpg" data-lightbox="example-3-3" data-title="펜션"></a>
+				<!-- 펜션 end -->
+				<a class="example-image-link" href="images/web_img/juicy/index_01.jpg" data-lightbox="example-3-4" data-title="쥬시"></a>
+				<a class="example-image-link" href="images/web_img/juicy/info.jpg" data-lightbox="example-3-4" data-title="쥬시"></a>
+				<a class="example-image-link" href="images/web_img/juicy/menu_01.jpg" data-lightbox="example-3-4" data-title="쥬시"></a>
+				<!-- juicy end -->
+				<a class="example-image-link" href="images/web_img/westgin/store1.jpg" data-lightbox="example-3-5" data-title="웨스트진"></a>
+                <!-- 웨스트진 end -->
+<!--				<a class="example-image-link" href="images/web_img/selecto_coffee/index.png" data-lightbox="example-3-6" data-title="셀렉토커피"></a>-->
+				<!-- 셀렉토커피 end-->				
+			</div>
+			<!-- 웹툰end -->
+			<div class="section_title">
+				<hr>
+				<h2>VIDEO</h2>
+				<hr>
+			</div>
+			<article id="video">
+				<div class="sample_wrap">
+					<div class="sample">
+						<iframe width="200" height="200" src="https://www.youtube.com/embed/Sm2HSqN2mmo?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<span><b>웹툰</b><br>
+					이미지를 이용한 애니메이션<br>
+					<div calss="video_icon"><img src="images/icon/ai.png" alt="" style="width:30px;margin-top:10px;"> <img src="images/icon/pr.png" alt="" style="width:30px;"></div></span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<iframe width="200" height="200" src="https://www.youtube.com/embed/j_PkVM8GrrY?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<span><b>홍보영상 인트로</b><br>
+					이미지에 동적인 효과부여<br>
+					<div calss="video_icon"><img src="images/icon/ai.png" alt="" style="width:30px;margin-top:10px;"> <img src="images/icon/ae.png" alt="" style="width:30px;"></div></span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<iframe width="200" height="200" src="https://www.youtube.com/embed/BY9l2oRzy9o?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<span><b>영상 특수효과</b><br>
+					이미지에 동적인 효과부여<br>
+					<div calss="video_icon"><img src="images/icon/ai.png" alt="" style="width:30px;margin-top:10px;"> <img src="images/icon/pr.png" alt="" style="width:30px;"> <img src="images/icon/ae.png" alt="" style="width:30px;"></div></span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<iframe width="200" height="200" src="https://www.youtube.com/embed/OoqybvrScXk?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<span><b>영상편집</b><br>
+					이미지를 이용한 영상편집<br>
+					<div calss="video_icon"><img src="images/icon/ps.png" alt="" style="width:30px;margin-top:10px;"> <img src="images/icon/pr.png" alt="" style="width:30px;"></div></span>
+				</div>
+				<div class="sample_wrap">
+					<div class="sample">
+						<iframe width="200" height="200" src="https://www.youtube.com/embed/vmkkI6Fj-n4?rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<span><b>특수효과</b><br>
+					이미지를 이용한 애니메이션<br>
+					<div calss="video_icon"><img src="images/icon/ps.png" alt="" style="width:30px;margin-top:10px;"> <img src="images/icon/ae.png" alt="" style="width:30px;"></div></span>
+				</div>
+			</article>
+			<script src="js/lightbox-plus-jquery.min.js"></script>
+		</div>
+	</section>
+<!--
+	<section id="section05">
+		contact 
+		<div class="section_wrap">
+			<div class="section_title">
+				<hr>
+				<h2>CONTACT</h2>
+				<hr>
+			</div>
+			<article class="contact_wrap">
+				<div>
+					
+				</div>
+			</article>
+		</div>
+	</section>
+-->
+	<script>
+		/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+		if ($(window).width() > 0) {
+			$(window).on("scroll", function (ev) {
+				if ($(window).scrollTop() > 150) { /**높이 픽셀 조정**/
+					$('.menu_box').addClass('fixed'); /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+				} else {
+					$('.menu_box').removeClass('fixed');
+				}
+				return false;
+			});
+		}
+		/**메뉴클릭 부드럽게 해당위치로 이동**/
+		$(function () {
+			$('a[href^=#]').click(function () {
+				var speed = 500;
+				var href = $(this).attr("href");
+				var target = $(href == "#" || href == "" ? 'html' : href);
+				var position = target.offset().top;
+				$('body,html').animate({
+					scrollTop: position
+				}, speed, 'swing');
+				return false;
+			});
+		});
+	</script>
+	<footer>
+		<strong>Copyright 2016. 이준성 All Right reserved.</strong>
+	</footer>
+</body>
+</html>
